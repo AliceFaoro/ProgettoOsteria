@@ -1,0 +1,103 @@
+<!--Creare una pagina html con tre select. Una per la scelta della pizza, una per la scelta del contorno e una per la scelta della bibita. Una volta premuto il pulsante il cliente riceve il riepilogo dell’ordine con i pasti selezionati e il prezzo totale, oltre alle immagini con le scelte fatte. Per la formattazione usare bootstrap. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osteria del Laghetto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand" style="background-color: rgba(117, 105, 228, 0.749)">
+        <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" id="navigazione">
+            <a class="tasto" class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="tasto" class="nav-link" href="about.html">Cosa dicono di noi</a><br>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo (2).png" alt="Logo" class="d-inline-block align-text-top" id="logo">
+            </a>
+
+              </div>
+            </div>
+        </div>
+   </nav>
+
+   <video autoplay muted loop id="myVideo">
+    <source src="images/video3.mp4" type="video/mp4" autoplay loop muted>
+  </video>
+   
+   <div id="presentazione">
+        <h2>Osteria del Laghetto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quaerat debitis minus officia repellendus minima voluptatum maiores earum perferendis, sint facilis hic blanditiis alias, soluta suscipit. Natus esse beatae commodi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veniam harum ea repellendus quam, magni, doloribus, delectus ducimus accusantium culpa unde suscipit. Eaque praesentium, laudantium dolorem fugit odio mollitia? Doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nobis commodi architecto, doloremque illum esse? Fuga, sapiente quo. Suscipit omnis provident voluptas temporibus rerum harum nobis aperiam totam dolore sed. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum labore suscipit perferendis deleniti recusandae eveniet, possimus fugiat assumenda dolore delectus ipsa dolorum iusto ex dolores, quo quae consectetur in quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aut ipsa quibusdam! Commodi totam distinctio facere ad, enim corporis deleniti veniam amet voluptatibus atque maiores libero maxime. Est, aut eveniet.</p>
+   </div>
+    
+   <h4 id="ordinazione">Ordina da noi</h4>
+   <form class="row gx-3 gy-2 align-items-center">
+    <div class="col-sm-3">
+        Scegli la pizza: <br>
+        <select id="selectPizza" class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Scegli</option>
+            <option value="margherita.5">margherita</option>
+            <option value="americana.8">americana</option>
+            <option value="ortolana.7">ortolana</option>
+            <option value="bufala.10">bufala</option>
+            <option value="capricciosa.12">capricciosa</option>
+        </select>
+    </div>
+    <div class="col-sm-3">
+        Scegli il contorno: <br>
+        <select id="selectContorno" class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Scegli</option>
+            <option value="patatine.5">patatine</option>
+            <option value="zucchine.3.5">zucchine</option>
+            <option value="radicchio.4">radicchio</option>
+        </select>
+    </div>
+    <div class="col-sm-3">
+        Scegli la bevanda: <br>
+        <select id="selectBevanda" class="form-select form-select-sm" aria-label="Small select example">
+            <option selected>Scegli</option>
+            <option value="acqua.2">acqua</option>
+            <option value="bibite.3.5">bibite</option>
+            <option value="birra.6">birra</option>
+        </select>
+    </div>
+    </form>
+    <br>
+    <button type="button" class="btn btn-info" onclick="mostra()">Mostra Pizza Selezionata</button>
+    <hr>
+    
+    <div id = "result">
+        
+    </div>
+    <div id ="immagini">
+        <img src="images/margherita.jpg" alt="margherita" id="margherita">
+        <img src="images/americana.jpg" alt="americana" id="americana">
+        <img src="images/ortolana.webp" alt="ortolana" id="ortolana">
+        <img src="images/bufala.jpeg" alt="bufala" id="bufala">
+        <img src="images/capricciosa.jpg" alt="capricciosa" id="capricciosa">
+        <img src="images/patatine.avif" alt="patatine" id="patatine">
+        <img src="images/zucchine.avif" alt="zucchine" id="zucchine">
+        <img src="images/radicchio.avif" alt="radicchio" id="radicchio">
+        <img src="images/acqua.jpg" alt="acqua" id="acqua">
+        <img src="images/bibite.jpg" alt="bibite" id="bibite">
+        <img src="images/birra.jpeg" alt="birra" id="birra">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

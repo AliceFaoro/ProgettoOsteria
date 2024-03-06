@@ -1,0 +1,111 @@
+ <!--Creare una pagina html con tre select. Una per la scelta della pizza, una per la scelta del contorno e una per la scelta della bibita. Una volta premuto il pulsante il cliente riceve il riepilogo dell’ordine con i pasti selezionati e il prezzo totale, oltre alle immagini con le scelte fatte. Per la formattazione usare bootstrap. -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Osteria del Laghetto</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+  
+ 
+ </head>
+ <body>
+ 
+     <nav class="navbar navbar-expand" style="background-color: rgba(117, 105, 228, 0.749)">
+         <div class="container-fluid">
+         
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav" id="navigazione">
+             <a class="tasto" class="nav-link active" aria-current="page" href="index.html">Home</a>
+             <a class="tasto" class="nav-link" href="about.html">Cosa dicono di noi</a><br>
+             <a class="navbar-brand" href="#">
+                 <img src="images/logo (2).png" alt="Logo" class="d-inline-block align-text-top" id="logo">
+             </a>
+               </div>
+             </div>
+         </div>
+    </nav>
+ 
+    <video autoplay muted loop id="myVideo">
+      <source src="images/video3.mp4" type="video/mp4" autoplay loop muted>
+    </video>
+    
+    <h4 id="dicononoi">Cosa dicono di noi: </h4> 
+    <div id="carouselExample" class="carousel slide">
+     <div class="carousel-inner">
+ 
+       <div class="carousel-item active">
+         <div class="card text-bg-info" class="d-block w-100" style="max-width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">Bellissima location</h5><hr>
+               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae id laborum exercitationem unde consequuntur ut deserunt ea sapiente eveniet, error quod similique magnam commodi molestiae nihil, atque dolorum soluta?</p>
+             </div>
+         </div>
+       </div>
+ 
+       <div class="carousel-item">
+         <div class="card text-bg-info" class="d-block w-100" style="max-width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">Come essere a casa</h5><hr>
+               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae id laborum exercitationem unde consequuntur ut deserunt ea sapiente eveniet, error quod similique magnam commodi molestiae nihil, atque dolorum soluta?</p>
+             </div>
+         </div>
+       </div>
+ 
+       <div class="carousel-item">
+         <div class="card text-bg-info" class="d-block w-100" style="max-width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">Ottima osteria</h5><hr>
+               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae id laborum exercitationem unde consequuntur ut deserunt ea sapiente eveniet, error quod similique magnam commodi molestiae nihil, atque dolorum soluta?</p>
+             </div>
+           </div>
+       </div>
+ 
+       <div class="carousel-item">
+         <div class="card text-bg-info" class="d-block w-100" style="max-width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">Pizza buonissima</h5><hr>
+               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae id laborum exercitationem unde consequuntur ut deserunt ea sapiente eveniet, error quod similique magnam commodi molestiae nihil, atque dolorum soluta?</p>
+             </div>
+           </div>
+       </div>
+ 
+       <div class="carousel-item">
+         <div class="card text-bg-info" class="d-block w-100" style="max-width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">Patatine fritte super</h5><hr>
+               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae id laborum exercitationem unde consequuntur ut deserunt ea sapiente eveniet, error quod similique magnam commodi molestiae nihil, atque dolorum soluta?</p>
+             </div>
+           </div>
+       </div>
+ 
+       <div class="carousel-item">
+         <div class="card text-bg-info" class="d-block w-100" style="max-width: 18rem;">
+             <div class="card-body">
+               <h5 class="card-title">Birra artigianale</h5><hr>
+               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae id laborum exercitationem unde consequuntur ut deserunt ea sapiente eveniet, error quod similique magnam commodi molestiae nihil, atque dolorum soluta?</p>
+             </div>
+           </div>
+       </div>
+ 
+     </div>
+ 
+     <button id = "prima" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button id="dopo" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div>
+ 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    </body>
+         
